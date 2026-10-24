@@ -7,12 +7,12 @@
 
     <meta
         name="description"
-        content="DragonTech ofrece mantenimiento preventivo de computadores, instalación de sistemas operativos y desarrollo de páginas web en Medellín."
+        content="DragonTech Care ofrece mantenimiento preventivo de computadores, instalación de sistemas operativos y desarrollo de páginas web en Medellín."
     >
 
     <meta name="theme-color" content="#171a1d">
 
-    <title>DragonTech | Tecnología confiable, soluciones reales</title>
+    <title>DragonTech Care | Tecnología confiable, soluciones reales</title>
 
     <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,35 +26,38 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Icono del sitio: lo añadiremos más adelante -->
-    <!-- <link rel="icon" href="assets/images/favicon.png"> -->
+    <link rel="icon" type="image/png" href="assets/images/icon-dragon.png"> 
 
     <!-- JavaScript -->
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <!-- Accesibilidad: permite saltar directamente al contenido -->
+    <!-- Accesibilidad -->
     <a class="skip-link" href="#main-content">
         Saltar al contenido
     </a>
 
-    <!-- ========================================
-         ENCABEZADO Y NAVEGACIÓN
-    ========================================= -->
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
     <header class="site-header">
         <div class="container header-container">
 
-            <a class="brand" href="#inicio" aria-label="DragonTech, inicio">
-                <span class="brand-mark" aria-hidden="true">D</span>
-
-                <span class="brand-text">
-                    <span class="brand-name">DragonTech</span>
-                    <span class="brand-tagline">Tecnología y soporte</span>
+            <a
+                class="brand"
+                href="#inicio"
+                aria-label="DragonTech Care, inicio"
+            >
+                <span class="brand-name">
+                    <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
+                    <span class="brand-care">Care</span>
                 </span>
             </a>
 
-            <nav class="main-nav" aria-label="Navegación principal">
+            <nav
+                class="main-nav"
+                id="main-navigation"
+                aria-label="Navegación principal"
+            >
                 <a href="#servicios">Servicios</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#proceso">Cómo trabajamos</a>
@@ -92,9 +95,7 @@
 
     <main id="main-content">
 
-        <!-- ========================================
-             PRESENTACIÓN PRINCIPAL
-        ========================================= -->
+        <!-- PRESENTACIÓN PRINCIPAL -->
         <section class="hero section" id="inicio">
             <div class="container hero-container">
 
@@ -131,32 +132,10 @@
                     </ul>
                 </div>
 
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="visual-card visual-card-main">
-                        <span class="visual-icon">DT</span>
-                        <span class="visual-label">DRAGONTECH</span>
-                        <span class="visual-caption">
-                            Soporte. Mantenimiento. Desarrollo.
-                        </span>
-                    </div>
-
-                    <div class="visual-card visual-card-top">
-                        <span class="status-dot"></span>
-                        Tecnología con propósito
-                    </div>
-
-                    <div class="visual-card visual-card-bottom">
-                        <span class="visual-symbol">+</span>
-                        Soluciones confiables
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <!-- ========================================
-             SERVICIOS
-        ========================================= -->
+        <!-- SERVICIOS -->
         <section class="services section" id="servicios">
             <div class="container">
 
@@ -218,7 +197,13 @@
                         </ul>
 
                         <p class="service-price">
-                            <strong>Cotización personalizada</strong>
+                            Desde <strong>$50.000 COP</strong>
+                        </p>
+
+                        <p class="service-disclaimer">
+                            La licencia de Windows no está incluida.
+                            Si tu equipo ya cuenta con una licencia
+                            digital válida, revisaremos su activación.
                         </p>
 
                         <a href="#contacto" class="text-link">
@@ -244,7 +229,12 @@
                         </ul>
 
                         <p class="service-price">
-                            <strong>Cotización personalizada</strong>
+                            Desde <strong>$40.000 COP</strong>
+                        </p>
+
+                        <p class="service-disclaimer">
+                        Precio para una instalación básica de Ubuntu en un equipo
+                        compatible.
                         </p>
 
                         <a href="#contacto" class="text-link">
@@ -252,47 +242,70 @@
                         </a>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">04</div>
 
-                        <h3>Páginas web para negocios</h3>
 
-                        <p>
-                            Páginas web sencillas y adaptables para
-                            presentar tus servicios, compartir información
-                            y facilitar el contacto con tus clientes.
-                        </p>
+<article class="service-card">
+    <div class="service-icon" aria-hidden="true">04</div>
 
-                        <ul>
-                            <li>Diseño adaptable a dispositivos</li>
-                            <li>Información de tu negocio</li>
-                            <li>Acceso directo a WhatsApp</li>
-                        </ul>
+    <h3>Páginas web básicas para negocios</h3>
 
-                        <p class="service-price">
-                            Desde <strong>$180.000 COP</strong>
-                        </p>
+    <p>
+        Creamos páginas web informativas para presentar tu negocio,
+        mostrar tus servicios y facilitar el contacto con tus clientes.
+    </p>
 
-                        <a href="#contacto" class="text-link">
-                            Hablemos de tu página →
-                        </a>
-                    </article>
+    <ul>
+        <li>Desarrollo con HTML, CSS y JavaScript</li>
+        <li>Diseño adaptable a celulares y computadores</li>
+        <li>Información del negocio y botón de WhatsApp</li>
+        <li>Sin bases de datos ni sistemas de usuarios</li>
+    </ul>
+
+    <p class="service-price">
+        Desde <strong>$180.000 COP</strong>
+    </p>
+
+    <p class="service-disclaimer">
+        Precio de desarrollo por única vez. El hosting y el dominio
+        no están incluidos y se pagan por separado.
+    </p>
+
+    <div class="service-maintenance">
+        <p class="service-price">
+            Mantenimiento mensual: <strong>$30.000 COP</strong>
+        </p>
+
+        <p class="service-disclaimer">
+            Incluye una revisión mensual y hasta 30 minutos de pequeñas
+            correcciones. No incluye nuevas funcionalidades, rediseños,
+            hosting ni dominio.
+        </p>
+    </div>
+
+    <a href="#contacto" class="text-link">
+        Hablemos de tu página →
+    </a>
+</article>
+
+
 
                 </div>
 
-                <p class="section-note">
-                    Los precios finales pueden variar según el estado
-                    del equipo, el alcance del trabajo y los requerimientos
-                    de cada proyecto. Toda modificación se acuerda
-                    previamente con el cliente.
-                </p>
+
+<p class="section-note">
+    Los precios publicados son valores iniciales y pueden variar
+    según el alcance del servicio. Todo trabajo adicional,
+    modificación o costo externo se informa y acuerda previamente
+    con el cliente. Los servicios de mantenimiento mensual se
+    contratan por separado y están sujetos a las condiciones
+    específicas de cada servicio.
+</p>
+
 
             </div>
         </section>
 
-        <!-- ========================================
-             NOSOTROS
-        ========================================= -->
+        <!-- NOSOTROS -->
         <section class="about section" id="nosotros">
             <div class="container">
 
@@ -302,7 +315,7 @@
                     <h2>Tecnología cercana, trabajo responsable</h2>
 
                     <p>
-                        En DragonTech creemos que acceder a soluciones
+                        En DragonTech Care creemos que acceder a soluciones
                         tecnológicas confiables no debería ser complicado.
                         Queremos que entiendas qué hacemos, por qué lo
                         hacemos y qué puedes esperar del resultado.
@@ -349,9 +362,7 @@
             </div>
         </section>
 
-        <!-- ========================================
-             PROCESO DE ATENCIÓN
-        ========================================= -->
+        <!-- PROCESO DE ATENCIÓN -->
         <section class="process section" id="proceso">
             <div class="container">
 
@@ -408,9 +419,7 @@
             </div>
         </section>
 
-        <!-- ========================================
-             PREGUNTAS FRECUENTES
-        ========================================= -->
+        <!-- PREGUNTAS FRECUENTES -->
         <section class="faq section" id="preguntas">
             <div class="container">
 
@@ -492,13 +501,25 @@
                         </p>
                     </details>
 
+                    <details class="faq-item">
+                        <summary>
+                            ¿La instalación de Windows incluye la licencia?
+                        </summary>
+
+                        <p>
+                            No. El precio del servicio cubre la
+                            instalación, no la compra de una licencia.
+                            Si tu equipo dispone de una licencia digital
+                            válida, revisaremos si puede utilizarse
+                            para activar el sistema.
+                        </p>
+                    </details>
+
                 </div>
             </div>
         </section>
 
-        <!-- ========================================
-             CONTACTO
-        ========================================= -->
+        <!-- CONTACTO -->
         <section class="contact section" id="contacto">
             <div class="container contact-container">
 
@@ -512,23 +533,26 @@
                         cuál es la mejor forma de ayudarte.
                     </p>
 
+
                     <a
-                        class="button button-primary"
-                        href="https://wa.me/57NUMERO"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    class="button button-primary"
+                    href="https://wa.me/573023876861?text=%C2%A1Hola%2C%20DragonTech%20Care%21%20%F0%9F%91%8B%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios.%20%C2%BFMe%20podr%C3%ADan%20brindar%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >
                         Contactar por WhatsApp
                     </a>
 
+
                     <p class="contact-note">
-                        Reemplazaremos el enlace provisional por el
-                        número oficial de DragonTech antes de publicar.
+                        El enlace de WhatsApp es provisional.
+                        Antes de publicar, lo reemplazaremos por el
+                        número oficial de DragonTech Care.
                     </p>
                 </div>
 
                 <div class="contact-details">
-                    <h3>DragonTech</h3>
+                    <h3>DragonTech Care</h3>
 
                     <p>
                         Servicios tecnológicos en Medellín, Antioquia.
@@ -557,18 +581,18 @@
 
     </main>
 
-    <!-- ========================================
-         PIE DE PÁGINA
-    ========================================= -->
+    <!-- PIE DE PÁGINA -->
     <footer class="site-footer">
         <div class="container footer-container">
 
-            <a class="brand footer-brand" href="#inicio">
-                <span class="brand-mark" aria-hidden="true">D</span>
-
-                <span class="brand-text">
-                    <span class="brand-name">DragonTech</span>
-                    <span class="brand-tagline">Tecnología y soporte</span>
+            <a
+                class="brand footer-brand"
+                href="#inicio"
+                aria-label="DragonTech Care, volver al inicio"
+            >
+                <span class="brand-name">
+                    <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
+                    <span class="brand-care">Care</span>
                 </span>
             </a>
 
@@ -577,7 +601,7 @@
             </p>
 
             <p class="copyright">
-                © <span id="current-year">2026</span> DragonTech.
+                © <span id="current-year">2026</span> DragonTech Care.
                 Todos los derechos reservados.
             </p>
 
