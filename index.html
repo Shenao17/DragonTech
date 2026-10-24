@@ -2,611 +2,565 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="DragonTech Care ofrece mantenimiento preventivo de computadores, instalación de sistemas operativos y desarrollo de páginas web en Medellín."
-    >
+  <title>DragonTech Care | Tecnología confiable, soluciones reales</title>
 
-    <meta name="theme-color" content="#171a1d">
+  <meta
+    name="description"
+    content="En DragonTech Care ofrecemos mantenimiento de computadores, instalación de sistemas operativos y desarrollo de páginas web para negocios en Medellín."
+  >
 
-    <title>DragonTech Care | Tecnología confiable, soluciones reales</title>
+  <meta name="theme-color" content="#17151d">
 
-    <!-- Tipografías -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="assets/images/icon-dragon.png">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="icon" type="image/png" href="assets/images/icon-dragon.png"> 
-
-    <!-- JavaScript -->
-    <script src="js/main.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <!-- Accesibilidad -->
-    <a class="skip-link" href="#main-content">
-        Saltar al contenido
-    </a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- ENCABEZADO Y NAVEGACIÓN -->
-    <header class="site-header">
-        <div class="container header-container">
+  <header class="site-header">
+    <div class="container header-container">
 
-            <a
-                class="brand"
-                href="#inicio"
-                aria-label="DragonTech Care, inicio"
-            >
-                <span class="brand-name">
-                    <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
-                    <span class="brand-care">Care</span>
-                </span>
+      <a class="brand" href="#inicio" aria-label="DragonTech Care, ir al inicio">
+        <span class="brand-name">
+          <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
+          <span class="brand-care">Care</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a class="nav-contact" href="#contacto">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-container">
+        <div class="hero-content">
+
+          <p class="eyebrow">Tecnología a tu alcance</p>
+
+          <h1>
+            Soluciones tecnológicas
+            <span>hechas para ti.</span>
+          </h1>
+
+          <p class="hero-description">
+            Cuidamos tus equipos y ayudamos a tu negocio a crecer con
+            servicios tecnológicos claros, responsables y adaptados a tus necesidades.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#servicios">
+              Conoce nuestros servicios
             </a>
 
-            <nav
-                class="main-nav"
-                id="main-navigation"
-                aria-label="Navegación principal"
-            >
-                <a href="#servicios">Servicios</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#proceso">Cómo trabajamos</a>
-                <a href="#preguntas">Preguntas frecuentes</a>
-                <a href="#contacto" class="nav-cta">Contáctanos</a>
-            </nav>
+            <a class="button button-secondary" href="#contacto">
+              Hablemos de tu proyecto
+            </a>
+          </div>
 
-            <div class="header-actions">
-                <label class="theme-control">
-                    <span class="sr-only">Seleccionar tema visual</span>
-
-                    <select id="theme-selector" name="theme">
-                        <option value="system">Tema del sistema</option>
-                        <option value="light">Tema claro</option>
-                        <option value="dark">Tema oscuro</option>
-                    </select>
-                </label>
-
-                <button
-                    class="menu-toggle"
-                    id="menu-toggle"
-                    type="button"
-                    aria-label="Abrir menú de navegación"
-                    aria-controls="main-navigation"
-                    aria-expanded="false"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+          <p class="hero-note">
+            Atención personalizada en Medellín, Antioquia.
+          </p>
 
         </div>
-    </header>
-
-    <main id="main-content">
-
-        <!-- PRESENTACIÓN PRINCIPAL -->
-        <section class="hero section" id="inicio">
-            <div class="container hero-container">
-
-                <div class="hero-content">
-                    <span class="eyebrow">
-                        Soluciones tecnológicas en Medellín
-                    </span>
-
-                    <h1>
-                        La tecnología funciona mejor
-                        <span>cuando puedes confiar en ella.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Cuidamos tus equipos, te ayudamos a configurar
-                        tu sistema operativo y creamos páginas web para
-                        impulsar tus ideas y tu negocio.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#servicios">
-                            Conoce nuestros servicios
-                        </a>
-
-                        <a class="button button-secondary" href="#contacto">
-                            Hablemos de tu proyecto
-                        </a>
-                    </div>
-
-                    <ul class="hero-highlights">
-                        <li>Atención transparente</li>
-                        <li>Soluciones a tu medida</li>
-                        <li>Servicio en Medellín</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SERVICIOS -->
-        <section class="services section" id="servicios">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">Qué hacemos</span>
-
-                    <h2>Soluciones para tus necesidades tecnológicas</h2>
-
-                    <p>
-                        Desde mantener tu computador en buenas condiciones
-                        hasta ayudarte a construir la presencia digital
-                        de tu negocio.
-                    </p>
-                </div>
-
-                <div class="services-grid">
-
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">01</div>
-
-                        <h3>Mantenimiento de computadores</h3>
-
-                        <p>
-                            Limpieza preventiva y revisión básica para
-                            ayudar a conservar tu equipo en buenas
-                            condiciones.
-                        </p>
-
-                        <ul>
-                            <li>Computadores de escritorio</li>
-                            <li>Portátiles sujetos a inspección</li>
-                            <li>Revisión del estado general</li>
-                        </ul>
-
-                        <p class="service-price">
-                            Desde <strong>$55.000 COP</strong>
-                        </p>
-
-                        <a href="#contacto" class="text-link">
-                            Consultar servicio →
-                        </a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">02</div>
-
-                        <h3>Instalación de Windows</h3>
-
-                        <p>
-                            Instalación o reinstalación de una versión
-                            compatible de Windows, según las necesidades
-                            y características del equipo.
-                        </p>
-
-                        <ul>
-                            <li>Preparación del sistema</li>
-                            <li>Configuración inicial</li>
-                            <li>Revisión de compatibilidad</li>
-                        </ul>
-
-                        <p class="service-price">
-                            Desde <strong>$50.000 COP</strong>
-                        </p>
-
-                        <p class="service-disclaimer">
-                            La licencia de Windows no está incluida.
-                            Si tu equipo ya cuenta con una licencia
-                            digital válida, revisaremos su activación.
-                        </p>
-
-                        <a href="#contacto" class="text-link">
-                            Consultar servicio →
-                        </a>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">03</div>
-
-                        <h3>Instalación de Linux</h3>
-
-                        <p>
-                            Instalación y configuración inicial de Ubuntu
-                            para quienes desean explorar o trabajar con
-                            un sistema operativo Linux.
-                        </p>
-
-                        <ul>
-                            <li>Revisión de compatibilidad</li>
-                            <li>Instalación de Ubuntu</li>
-                            <li>Configuración básica</li>
-                        </ul>
-
-                        <p class="service-price">
-                            Desde <strong>$40.000 COP</strong>
-                        </p>
-
-                        <p class="service-disclaimer">
-                        Precio para una instalación básica de Ubuntu en un equipo
-                        compatible.
-                        </p>
-
-                        <a href="#contacto" class="text-link">
-                            Consultar servicio →
-                        </a>
-                    </article>
-
-
-
-<article class="service-card">
-    <div class="service-icon" aria-hidden="true">04</div>
-
-    <h3>Páginas web básicas para negocios</h3>
-
-    <p>
-        Creamos páginas web informativas para presentar tu negocio,
-        mostrar tus servicios y facilitar el contacto con tus clientes.
-    </p>
-
-    <ul>
-        <li>Desarrollo con HTML, CSS y JavaScript</li>
-        <li>Diseño adaptable a celulares y computadores</li>
-        <li>Información del negocio y botón de WhatsApp</li>
-        <li>Sin bases de datos ni sistemas de usuarios</li>
-    </ul>
-
-    <p class="service-price">
-        Desde <strong>$180.000 COP</strong>
-    </p>
-
-    <p class="service-disclaimer">
-        Precio de desarrollo por única vez. El hosting y el dominio
-        no están incluidos y se pagan por separado.
-    </p>
-
-    <div class="service-maintenance">
-        <p class="service-price">
-            Mantenimiento mensual: <strong>$30.000 COP</strong>
-        </p>
-
-        <p class="service-disclaimer">
-            Incluye una revisión mensual y hasta 30 minutos de pequeñas
-            correcciones. No incluye nuevas funcionalidades, rediseños,
-            hosting ni dominio.
-        </p>
-    </div>
-
-    <a href="#contacto" class="text-link">
-        Hablemos de tu página →
-    </a>
-</article>
-
-
-
-                </div>
-
-
-<p class="section-note">
-    Los precios publicados son valores iniciales y pueden variar
-    según el alcance del servicio. Todo trabajo adicional,
-    modificación o costo externo se informa y acuerda previamente
-    con el cliente. Los servicios de mantenimiento mensual se
-    contratan por separado y están sujetos a las condiciones
-    específicas de cada servicio.
-</p>
-
-
-            </div>
-        </section>
-
-        <!-- NOSOTROS -->
-        <section class="about section" id="nosotros">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">Quiénes somos</span>
-
-                    <h2>Tecnología cercana, trabajo responsable</h2>
-
-                    <p>
-                        En DragonTech Care creemos que acceder a soluciones
-                        tecnológicas confiables no debería ser complicado.
-                        Queremos que entiendas qué hacemos, por qué lo
-                        hacemos y qué puedes esperar del resultado.
-                    </p>
-                </div>
-
-                <div class="about-grid">
-
-                    <article class="about-card">
-                        <h3>Nuestra misión</h3>
-
-                        <p>
-                            Brindar soluciones tecnológicas accesibles
-                            y confiables a personas y pequeños negocios
-                            de Medellín mediante mantenimiento preventivo,
-                            instalación de sistemas operativos y desarrollo
-                            web, con atención transparente y responsable.
-                        </p>
-                    </article>
-
-                    <article class="about-card">
-                        <h3>Nuestra visión</h3>
-
-                        <p>
-                            Consolidarnos como una alternativa confiable
-                            de servicios tecnológicos en Medellín y crecer
-                            progresivamente hacia el desarrollo de software
-                            y nuevas soluciones digitales.
-                        </p>
-                    </article>
-
-                    <article class="about-card">
-                        <h3>Nuestros valores</h3>
-
-                        <ul>
-                            <li>Confianza y transparencia</li>
-                            <li>Responsabilidad con cada equipo</li>
-                            <li>Calidad en nuestro trabajo</li>
-                            <li>Aprendizaje y mejora continua</li>
-                        </ul>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- PROCESO DE ATENCIÓN -->
-        <section class="process section" id="proceso">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">Nuestro proceso</span>
-
-                    <h2>Así trabajamos contigo</h2>
-
-                    <p>
-                        Queremos que tengas claridad desde el primer
-                        contacto hasta la entrega del servicio.
-                    </p>
-                </div>
-
-                <ol class="process-grid">
-
-                    <li class="process-step">
-                        <span class="step-number">01</span>
-                        <h3>Nos cuentas</h3>
-                        <p>
-                            Nos explicas qué necesitas y coordinamos
-                            los detalles iniciales.
-                        </p>
-                    </li>
-
-                    <li class="process-step">
-                        <span class="step-number">02</span>
-                        <h3>Evaluamos</h3>
-                        <p>
-                            Revisamos los requerimientos y, cuando
-                            corresponda, el estado del equipo.
-                        </p>
-                    </li>
-
-                    <li class="process-step">
-                        <span class="step-number">03</span>
-                        <h3>Acordamos</h3>
-                        <p>
-                            Te informamos el alcance, el precio y las
-                            condiciones antes de comenzar.
-                        </p>
-                    </li>
-
-                    <li class="process-step">
-                        <span class="step-number">04</span>
-                        <h3>Realizamos y entregamos</h3>
-                        <p>
-                            Ejecutamos el trabajo acordado y coordinamos
-                            la entrega contigo.
-                        </p>
-                    </li>
-
-                </ol>
-            </div>
-        </section>
-
-        <!-- PREGUNTAS FRECUENTES -->
-        <section class="faq section" id="preguntas">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">Preguntas frecuentes</span>
-
-                    <h2>Antes de solicitar un servicio</h2>
-
-                    <p>
-                        Algunas respuestas que pueden ayudarte a tomar
-                        una decisión.
-                    </p>
-                </div>
-
-                <div class="faq-list">
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿En qué zonas prestan sus servicios?
-                        </summary>
-
-                        <p>
-                            Atendemos en Medellín, con cobertura inicial
-                            enfocada en el norte de la ciudad. La
-                            disponibilidad y la logística se confirman
-                            antes de coordinar cada servicio.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿El precio publicado es definitivo?
-                        </summary>
-
-                        <p>
-                            Los precios indicados son valores iniciales.
-                            Confirmamos el costo según el servicio,
-                            las condiciones del equipo y el alcance
-                            acordado antes de comenzar.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿Debo explicar el problema antes de llevar mi equipo?
-                        </summary>
-
-                        <p>
-                            Sí. Cuéntanos qué sucede, qué equipo tienes
-                            y qué necesitas. Esa información nos ayuda
-                            a orientar la atención y determinar los
-                            siguientes pasos.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿Realizan soporte remoto?
-                        </summary>
-
-                        <p>
-                            Por el momento, nuestros servicios se
-                            coordinan directamente con el cliente.
-                            El soporte remoto no está disponible
-                            en esta etapa.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿Puedo solicitar una página web para mi negocio?
-                        </summary>
-
-                        <p>
-                            Claro. Cuéntanos a qué se dedica tu negocio,
-                            qué información necesitas mostrar y qué
-                            funcionalidades esperas. Con eso podremos
-                            preparar una cotización.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>
-                            ¿La instalación de Windows incluye la licencia?
-                        </summary>
-
-                        <p>
-                            No. El precio del servicio cubre la
-                            instalación, no la compra de una licencia.
-                            Si tu equipo dispone de una licencia digital
-                            válida, revisaremos si puede utilizarse
-                            para activar el sistema.
-                        </p>
-                    </details>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section class="contact section" id="contacto">
-            <div class="container contact-container">
-
-                <div class="contact-content">
-                    <span class="eyebrow">Hablemos</span>
-
-                    <h2>¿Qué necesitas resolver hoy?</h2>
-
-                    <p>
-                        Cuéntanos qué necesitas y revisaremos contigo
-                        cuál es la mejor forma de ayudarte.
-                    </p>
-
-
-                    <a
-                    class="button button-primary"
-                    href="https://wa.me/573023876861?text=%C2%A1Hola%2C%20DragonTech%20Care%21%20%F0%9F%91%8B%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios.%20%C2%BFMe%20podr%C3%ADan%20brindar%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        Contactar por WhatsApp
-                    </a>
-
-
-                    <p class="contact-note">
-                        El enlace de WhatsApp es provisional.
-                        Antes de publicar, lo reemplazaremos por el
-                        número oficial de DragonTech Care.
-                    </p>
-                </div>
-
-                <div class="contact-details">
-                    <h3>DragonTech Care</h3>
-
-                    <p>
-                        Servicios tecnológicos en Medellín, Antioquia.
-                    </p>
-
-                    <ul>
-                        <li>
-                            <strong>Atención:</strong>
-                            Con cita previa y disponibilidad confirmada.
-                        </li>
-
-                        <li>
-                            <strong>Zona inicial:</strong>
-                            Norte de Medellín.
-                        </li>
-
-                        <li>
-                            <strong>Contacto:</strong>
-                            WhatsApp.
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer class="site-footer">
-        <div class="container footer-container">
-
-            <a
-                class="brand footer-brand"
-                href="#inicio"
-                aria-label="DragonTech Care, volver al inicio"
-            >
-                <span class="brand-name">
-                    <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
-                    <span class="brand-care">Care</span>
-                </span>
-            </a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section services-section" id="servicios">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">¿En qué podemos ayudarte?</p>
+          <h2>Servicios tecnológicos <span>sin complicaciones.</span></h2>
+          <p>
+            Soluciones prácticas para tus equipos y tu negocio,
+            con precios y alcances definidos antes de comenzar.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-number" aria-hidden="true">01</div>
+
+            <h3>Mantenimiento de computadores</h3>
 
             <p>
-                Soluciones tecnológicas con responsabilidad y confianza.
+              Limpieza interna y externa, revisión general y mantenimiento
+              preventivo para ayudar a conservar tu equipo en buenas condiciones.
             </p>
 
-            <p class="copyright">
-                © <span id="current-year">2026</span> DragonTech Care.
-                Todos los derechos reservados.
+            <ul class="service-features">
+              <li>Revisión del estado del equipo</li>
+              <li>Limpieza según sus características</li>
+              <li>Recomendaciones de cuidado</li>
+            </ul>
+
+            <p class="service-price">
+              Desde <strong>$55.000 COP</strong>
             </p>
+
+            <a
+              class="text-link"
+              href="https://wa.me/573023876861?text=Hola%2C%20DragonTech%20Care.%20Quiero%20consultar%20por%20el%20mantenimiento%20de%20un%20computador."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar servicio <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number" aria-hidden="true">02</div>
+
+            <h3>Instalación de Windows</h3>
+
+            <p>
+              Instalación del sistema operativo y configuración básica
+              para que puedas volver a utilizar tu computador.
+            </p>
+
+            <ul class="service-features">
+              <li>Instalación y configuración inicial</li>
+              <li>Revisión básica de controladores</li>
+              <li>Orientación sobre activación</li>
+            </ul>
+
+            <p class="service-price">
+              Desde <strong>$50.000 COP</strong>
+            </p>
+
+            <p class="service-disclaimer">
+              La licencia de Windows no está incluida. Si ya tienes una
+              licencia digital válida, podemos revisar su activación.
+            </p>
+
+            <a
+              class="text-link"
+              href="https://wa.me/573023876861?text=Hola%2C%20DragonTech%20Care.%20Quiero%20consultar%20por%20la%20instalaci%C3%B3n%20de%20Windows."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar servicio <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number" aria-hidden="true">03</div>
+
+            <h3>Instalación de Linux</h3>
+
+            <p>
+              Instalación básica de Ubuntu y otras distribuciones compatibles,
+              según las características y necesidades de tu equipo.
+            </p>
+
+            <ul class="service-features">
+              <li>Revisión de compatibilidad</li>
+              <li>Instalación del sistema</li>
+              <li>Configuración inicial básica</li>
+            </ul>
+
+            <p class="service-price">
+              Desde <strong>$40.000 COP</strong>
+            </p>
+
+            <p class="service-disclaimer">
+              Los trabajos adicionales se cotizan por separado
+              según el equipo y el alcance solicitado.
+            </p>
+
+            <a
+              class="text-link"
+              href="https://wa.me/573023876861?text=Hola%2C%20DragonTech%20Care.%20Quiero%20consultar%20por%20la%20instalaci%C3%B3n%20de%20Linux."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar servicio <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number" aria-hidden="true">04</div>
+
+            <h3>Páginas web para negocios</h3>
+
+            <p>
+              Páginas web informativas para presentar tus servicios,
+              compartir tus datos de contacto y facilitar que tus clientes
+              te encuentren.
+            </p>
+
+            <ul class="service-features">
+              <li>Diseño adaptable a móviles y computadores</li>
+              <li>Información de tu negocio y servicios</li>
+              <li>Acceso directo a WhatsApp</li>
+            </ul>
+
+            <p class="service-price">
+              Desde <strong>$180.000 COP</strong>
+            </p>
+
+            <p class="service-disclaimer">
+              El dominio y el alojamiento web se cotizan por separado.
+              No incluye sistemas con bases de datos ni cuentas de usuario.
+            </p>
+
+            <a
+              class="text-link"
+              href="https://wa.me/573023876861?text=Hola%2C%20DragonTech%20Care.%20Quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cotizar página web <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          
 
         </div>
-    </footer>
+
+        <div class="maintenance-note">
+          <div>
+            <h3>¿Necesitas mantener tu página web?</h3>
+            <p>
+              También puedes consultar nuestro servicio opcional de
+              mantenimiento mensual para páginas web.
+            </p>
+          </div>
+
+          <p class="maintenance-price">
+            <strong>$30.000 COP</strong>
+            <span>al mes</span>
+          </p>
+
+          <p class="maintenance-disclaimer">
+            Incluye una revisión mensual y hasta 30 minutos de correcciones
+            menores. No incluye nuevas funcionalidades, rediseños, dominio ni alojamiento.
+          </p>
+        </div>
+
+        <p class="section-disclaimer">
+          Los precios publicados son valores iniciales. El costo final dependerá
+          del estado del equipo o del alcance del proyecto. Siempre acordaremos
+          el servicio y su precio antes de comenzar.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about-section" id="nosotros">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Conoce DragonTech Care</p>
+          <h2>La tecnología debe <span>hacerte la vida más fácil.</span></h2>
+          <p>
+            Queremos acercar soluciones tecnológicas útiles a las personas
+            y los pequeños negocios, sin complicaciones innecesarias.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <article class="about-item">
+            <h3>Nuestra misión</h3>
+            <p>
+              Brindar servicios tecnológicos accesibles y responsables,
+              explicando con claridad qué necesita cada equipo o proyecto.
+            </p>
+          </article>
+
+          <article class="about-item">
+            <h3>Nuestra visión</h3>
+            <p>
+              Construir una marca confiable que crezca junto a sus clientes
+              y ofrezca soluciones cada vez más útiles.
+            </p>
+          </article>
+
+          <article class="about-item">
+            <h3>Nuestros valores</h3>
+            <p>
+              Transparencia, responsabilidad, aprendizaje continuo y respeto
+              por el tiempo, los equipos y las necesidades de cada cliente.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section process-section" id="proceso">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Así trabajamos</p>
+          <h2>Un proceso <span>claro desde el inicio.</span></h2>
+          <p>
+            Queremos que sepas qué vamos a hacer, cuánto costará
+            y qué puedes esperar del servicio.
+          </p>
+        </div>
+
+        <ol class="process-grid">
+
+          <li class="process-step">
+            <span class="process-number">01</span>
+            <h3>Cuéntanos</h3>
+            <p>
+              Explícanos qué necesitas, qué problema presenta tu equipo
+              o qué tienes en mente para tu negocio.
+            </p>
+          </li>
+
+          <li class="process-step">
+            <span class="process-number">02</span>
+            <h3>Evaluamos</h3>
+            <p>
+              Revisamos la información disponible y determinamos
+              qué solución se ajusta mejor a tu necesidad.
+            </p>
+          </li>
+
+          <li class="process-step">
+            <span class="process-number">03</span>
+            <h3>Acordamos</h3>
+            <p>
+              Te explicamos el alcance, el precio y las condiciones
+              antes de iniciar cualquier trabajo.
+            </p>
+          </li>
+
+          <li class="process-step">
+            <span class="process-number">04</span>
+            <h3>Realizamos el trabajo</h3>
+            <p>
+              Ejecutamos el servicio acordado y te explicamos
+              los resultados y las recomendaciones pertinentes.
+            </p>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section faq-section" id="preguntas">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Resolvemos tus dudas</p>
+          <h2>Preguntas <span>frecuentes.</span></h2>
+          <p>
+            ¿Tienes dudas antes de contratar un servicio?
+            Aquí encontrarás algunas respuestas.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>¿En qué zonas prestan sus servicios?</summary>
+            <p>
+              Atendemos en Medellín, Antioquia, con cobertura inicial
+              enfocada en la zona norte de la ciudad. La disponibilidad
+              y los desplazamientos se confirman antes de coordinar el servicio.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Los precios son definitivos?</summary>
+            <p>
+              Los precios publicados son valores iniciales. Si el trabajo
+              requiere actividades adicionales, te explicaremos el alcance
+              y el costo antes de realizar cualquier trabajo extra.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Debo explicar qué le sucede a mi computador?</summary>
+            <p>
+              Sí. Cuéntanos qué problema presenta, desde cuándo sucede
+              y qué cambios has notado. Esta información nos ayuda a orientar
+              la revisión inicial, aunque no siempre permite confirmar
+              la causa sin inspeccionar el equipo.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Ofrecen soporte remoto?</summary>
+            <p>
+              Actualmente no ofrecemos soporte remoto. La disponibilidad
+              de atención se coordina según el servicio y la ubicación.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Pueden crear una página web para mi negocio?</summary>
+            <p>
+              Sí. Desarrollamos páginas web informativas y adaptables
+              a diferentes pantallas, con información de tu negocio
+              y acceso a WhatsApp. Las funcionalidades adicionales
+              se evalúan y cotizan por separado.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿La instalación de Windows incluye una licencia?</summary>
+            <p>
+              No. El precio de instalación no incluye una licencia.
+              Si tu equipo ya cuenta con una licencia digital válida,
+              podemos revisar su activación.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Tengo que aceptar la cotización antes de comenzar?</summary>
+            <p>
+              Sí. Antes de iniciar acordaremos contigo el servicio,
+              su alcance y el precio correspondiente.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+
+        <div class="contact-content">
+          <p class="eyebrow">Hablemos</p>
+
+          <h2>¿Qué solución <span>necesitas hoy?</span></h2>
+
+          <p>
+            Cuéntanos tu idea o el problema que quieres resolver.
+            Te ayudaremos a identificar el siguiente paso y a conocer
+            las opciones disponibles.
+          </p>
+
+          <a
+            class="button button-primary contact-button"
+            href="https://wa.me/573023876861?text=%C2%A1Hola%2C%20DragonTech%20Care%21%20%F0%9F%91%8B%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios.%20%C2%BFMe%20podr%C3%ADan%20brindar%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Escríbenos por WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+
+          <p class="contact-note">
+            Al abrir WhatsApp, podrás revisar el mensaje y enviarlo desde la aplicación.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="#inicio" aria-label="DragonTech Care, ir al inicio">
+          <span class="brand-name">
+            <span class="brand-dragon">Dragon</span><span class="brand-tech">Tech</span>
+            <span class="brand-care">Care</span>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Soluciones tecnológicas con responsabilidad y confianza.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Navegación del pie de página">
+        <h2 class="footer-heading">Navegación</h2>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contacto</h2>
+        <p>Medellín, Antioquia</p>
+        <p>Zona inicial de atención: norte de Medellín.</p>
+
+        <div class="footer-theme">
+  <h2 class="footer-heading">Apariencia</h2>
+
+  <label for="theme-selector">Tema de la página</label>
+
+  <select id="theme-selector" name="theme">
+    <option value="system">Sistema</option>
+    <option value="light">Claro</option>
+    <option value="dark">Oscuro</option>
+  </select>
+</div>
+
+        <a
+          class="footer-contact-link"
+          href="https://wa.me/573023876861?text=Hola%2C%20DragonTech%20Care.%20Quiero%20hacer%20una%20consulta."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escríbenos por WhatsApp <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © <span id="current-year">2026</span> DragonTech Care.
+          Todos los derechos reservados.
+        </p>
+        <a href="#inicio">Volver al inicio ↑</a>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>
