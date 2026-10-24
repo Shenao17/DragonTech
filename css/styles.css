@@ -1418,3 +1418,40 @@ ol {
     max-width: 100%;
   }
 }
+
+/* Correo electrónico del footer */
+.footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+  color: var(--accent);
+}
+
+.footer-email-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.65rem;
+  color: var(--accent);
+  background: var(--surface);
+  font-size: 1rem;
+}
+
+.footer-email:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
