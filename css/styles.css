@@ -1455,3 +1455,40 @@ ol {
   outline-offset: 4px;
   border-radius: 3px;
 }
+
+/* Enlace legal del footer */
+.footer-legal-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+    margin-top: 0.5rem;
+
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.footer-legal-link span {
+    color: var(--accent);
+    transition: transform 0.2s ease;
+}
+
+.footer-legal-link:hover {
+    color: var(--accent);
+}
+
+.footer-legal-link:hover span {
+    transform: translate(2px, -2px);
+}
+
+.footer-legal-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
